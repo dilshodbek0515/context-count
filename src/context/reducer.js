@@ -1,7 +1,8 @@
 export const inititalState = {
     count: 0,
     bool: false,
-    text: "salom"
+    text: "salom",
+    theme: false
 }
 
 export const reducer = (state, action) => {
@@ -12,6 +13,8 @@ export const reducer = (state, action) => {
             return { ...state, count: state.count - 1 }
         case "TOGGLE":
             return { ...state, bool: !state.bool }
+        case "TOGGLE_THEME":
+            return { ...state, theme: !state.theme }
         default:
             return state
     }

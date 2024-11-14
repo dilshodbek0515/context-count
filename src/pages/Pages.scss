@@ -1,0 +1,19 @@
+.pages {
+    background-color: #fff;
+    color: dodgerblue;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .d_m {
+        font-size: 100px;
+    }
+}
+
+.pages.dark {
+    background-color: #333;
+    color: dodgerblue;
+}
